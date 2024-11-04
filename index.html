@@ -147,8 +147,69 @@
         <div class="editable-style silex-element-content website-width silex-id-1483139730465-6 container-element">
             
             
-        <div class="editable-style container-element silex-id-1723933752886-0"><a class="editable-style image-element silex-id-1727965005892-6" href="https://www.waexservices.com/"><img src="assets/WBLlogo_white.png"></a></div><nav class="editable-style text-element silex-id-1439156722322-45 hide-on-mobile nav">
-                <div class="silex-element-content normal"><p><a href="index.html" class="page-link-active">Home</a>&nbsp; &nbsp; <a href="pricing-1.html">Pricing</a>&nbsp; &nbsp;&nbsp;<a href="https://docs.waexservices.com" target="_blank" title="CCDB docs">Docs</a>&nbsp; &nbsp; <a href="https://drive.google.com/file/d/1ZNnZXvXqdxfYL2PAyAIdFF-plkZGJ4FT/view?usp=sharing" target="_blank" title="CCDB Whitepaper">Whitepaper&nbsp; &nbsp; &nbsp;</a><a href="https://www.wolframblockchainlabs.com/" target="_blank" title="WBL">About us</a></p></div>
+        <div class="editable-style container-element silex-id-1723933752886-0"><div class="editable-style text-element silex-id-1730384614618-0 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
+<!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
+<div class="hamburger-menu_1730729645146_554 closed">
+    <div class="hamburger-btn ">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-container">
+      <div class="prevent-scale">
+        <nav class="">
+            <ul>
+            
+                <li><a href="index.html" title="Home" class="page-link-active">Home</a></li>
+            
+                <li><a href="pricing.html" title="Pricing">Pricing</a></li>
+            
+            </ul>
+        </nav>
+      </div>
+  </div>
+</div>
+<script>
+(function() {
+  var isOpen = false;
+  function close() {
+    isOpen = false;
+    document.querySelector('.hamburger-menu_1730729645146_554').classList.remove('open');
+    document.querySelector('.hamburger-menu_1730729645146_554').classList.add('closed');
+  }
+  function open() {
+    isOpen = true;
+    document.querySelector('.hamburger-menu_1730729645146_554').classList.add('open');
+    document.querySelector('.hamburger-menu_1730729645146_554').classList.remove('closed');
+  }
+  function toggle() {
+    if(isOpen) close();
+    else open();
+  }
+  function scrollOrResize() {
+    close();
+    move();
+  }
+  var silexElement = document.querySelector('.hamburger-menu_1730729645146_554').closest('.editable-style');
+  function move() {
+    var data = window.silex
+    var rect = silexElement.getBoundingClientRect();
+    var offset = {
+      top: rect.top + data.scrollTop,
+      left: rect.left + data.scrollLeft,
+    };
+    var container = document.querySelector('.hamburger-menu_1730729645146_554 .nav-container');
+    container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
+  }
+  document.querySelector('.hamburger-menu_1730729645146_554 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.addEventListener('resize', scrollOrResize);
+  document.addEventListener('scroll', scrollOrResize);
+  scrollOrResize()
+  setTimeout(() => scrollOrResize(), 0)
+})();
+</script>
+</div></div><a class="editable-style image-element silex-id-1727965005892-6" href="https://www.waexservices.com/"><img src="assets/WBLlogo_white.png"></a></div><nav class="editable-style text-element silex-id-1439156722322-45 hide-on-mobile nav">
+                <div class="silex-element-content normal"><p><a href="index.html" class="page-link-active">Home</a>&nbsp; &nbsp; <a href="pricing.html" class="">Pricing</a>&nbsp; &nbsp;&nbsp;<a href="https://docs.waexservices.com" target="_blank" title="CCDB docs">Docs</a>&nbsp; &nbsp; <a href="https://drive.google.com/file/d/1ZNnZXvXqdxfYL2PAyAIdFF-plkZGJ4FT/view?usp=sharing" target="_blank" title="CCDB Whitepaper">Whitepaper&nbsp; &nbsp; &nbsp;</a><a href="https://www.wolframblockchainlabs.com/" target="_blank" title="WBL">About us</a></p></div>
             </nav><a class="editable-style text-element silex-id-1727896279046-0 button hide-on-mobile" title="" href="https://access.ccdb.waexservices.com/"><div class="silex-element-content normal">
                     <p>Login</p>
                     
@@ -190,7 +251,7 @@
                 
 
                 
-            <div class="editable-style text-element silex-id-1723839718695-5 style-sect1"><div class="silex-element-content normal"><h3>Data Retrieval</h3></div></div><div class="editable-style text-element silex-id-1723840283056-7 style-sect1"><div class="silex-element-content normal"><p>Unlock the full spectrum of&nbsp;cryptocurrency market data with our robust API endpoints.</p></div></div><div class="editable-style text-element silex-id-1723840322433-8 style-sect1"><div class="silex-element-content normal"><h3>Data Feed</h3><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div class="editable-style text-element silex-id-1723840322433-9 style-sect1"><div class="silex-element-content normal"><p>Stay ahead of the market with our real-time WebSocket data feed. Stream live updates directly to your applications as events occur.</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div></div><div class="editable-style container-element silex-id-1439156721615-38">
+            <div class="editable-style text-element silex-id-1723839718695-5 style-sect1"><div class="silex-element-content normal"><h3>Data Retrieval</h3><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div class="editable-style text-element silex-id-1723840283056-7 style-sect1"><div class="silex-element-content normal"><p>Unlock the full spectrum of&nbsp;cryptocurrency market data with our robust API endpoints.</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div class="editable-style text-element silex-id-1723840322433-8 style-sect1"><div class="silex-element-content normal"><h3>Data Feed</h3><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div class="editable-style text-element silex-id-1723840322433-9 style-sect1"><div class="silex-element-content normal"><p>Stay ahead of the market with our real-time WebSocket data feed. Stream live updates directly to your applications as events occur.</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div></div><div class="editable-style container-element silex-id-1439156721615-38">
                 
                 
 
