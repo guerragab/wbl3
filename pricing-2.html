@@ -143,13 +143,13 @@
 
 
 
-<section class="editable-style section-element silex-id-1730317934792-0 page-pricing-2 paged-element paged-element-visible"><div class="editable-style container-element silex-id-1730317934792-1 page-pricing-2 paged-element silex-element-content website-width prevent-draggable paged-element-visible"><div class="editable-style container-element silex-id-1730317934792-2 page-pricing-2 paged-element paged-element-visible"></div></div></section><header class="container-element editable-style silex-id-1483139730465-7 section-element prevent-resizable">
+<header class="container-element editable-style silex-id-1483139730465-7 section-element prevent-resizable">
         <div class="editable-style silex-element-content website-width silex-id-1483139730465-6 container-element">
             
             
         <div class="editable-style text-element silex-id-1730384614618-0 hide-on-desktop silex-component-hamburger prevent-resizable prevent-auto-z-index hamburger-menu"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1730737637478_851 closed">
+<div class="hamburger-menu_1730763610672_265 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -160,9 +160,15 @@
         <nav class="">
             <ul>
             
-                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="index.html" title="Home" class="">Home</a></li>
             
                 <li><a href="pricing.html" title="Pricing" class="">Pricing</a></li>
+            
+                <li><a href="https://docs.waexservices.com" target="_blank" title="Docs">Docs</a></li>
+            
+                <li><a href="https://drive.google.com/file/d/1ZNnZXvXqdxfYL2PAyAIdFF-plkZGJ4FT/view?usp=sharing" target="_blank" title="Whitepaper">Whitepaper</a></li>
+            
+                <li><a href="https://www.wolframblockchainlabs.com/" target="_blank" title="WBL">About us</a></li>
             
             </ul>
         </nav>
@@ -174,13 +180,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1730737637478_851').classList.remove('open');
-    document.querySelector('.hamburger-menu_1730737637478_851').classList.add('closed');
+    document.querySelector('.hamburger-menu_1730763610672_265').classList.remove('open');
+    document.querySelector('.hamburger-menu_1730763610672_265').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1730737637478_851').classList.add('open');
-    document.querySelector('.hamburger-menu_1730737637478_851').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1730763610672_265').classList.add('open');
+    document.querySelector('.hamburger-menu_1730763610672_265').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -190,7 +196,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1730737637478_851').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1730763610672_265').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -198,23 +204,23 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1730737637478_851 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1730763610672_265 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1730737637478_851 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1730763610672_265 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
   setTimeout(() => scrollOrResize(), 0)
 })();
 </script>
-</div></div><div class="editable-style container-element silex-id-1723933752886-0"><a class="editable-style image-element silex-id-1727965005892-6" href="https://www.waexservices.com/"><img src="assets/WBLlogo_white.png"></a></div><nav class="editable-style text-element silex-id-1439156722322-45 hide-on-mobile nav">
-                <div class="silex-element-content normal"><p><a href="index.html" class="">Home</a>&nbsp; &nbsp; <a href="pricing.html" class="">Pricing</a>&nbsp; &nbsp;&nbsp;<a href="https://docs.waexservices.com" target="_blank" title="CCDB docs">Docs</a>&nbsp; &nbsp; <a href="https://drive.google.com/file/d/1ZNnZXvXqdxfYL2PAyAIdFF-plkZGJ4FT/view?usp=sharing" target="_blank" title="CCDB Whitepaper">Whitepaper&nbsp; &nbsp; &nbsp;</a><a href="https://www.wolframblockchainlabs.com/" target="_blank" title="WBL">About us</a></p></div>
-            </nav><a class="editable-style text-element silex-id-1727896279046-0 button hide-on-mobile" title="" href="https://access.ccdb.waexservices.com/"><div class="silex-element-content normal">
+</div></div><div class="editable-style container-element silex-id-1723933752886-0"><a class="editable-style image-element silex-id-1727965005892-6" href="index.html"><img src="assets/WBLlogo_white.png"></a></div><a class="editable-style text-element silex-id-1727896279046-0 button hide-on-mobile" title="" href="https://access.ccdb.waexservices.com/"><div class="silex-element-content normal">
                     <p>Login</p>
                     
-                </div></a></div>
-    </header><footer class="container-element editable-style silex-id-1483139189898-1 section-element prevent-resizable">
+                </div></a><nav class="editable-style text-element silex-id-1439156722322-45 hide-on-mobile style-sect1">
+                <div class="silex-element-content normal"><p><a href="index.html" class="">Home</a>&nbsp; &nbsp; <a href="pricing.html" class="">Pricing</a>&nbsp; &nbsp;&nbsp;<a href="https://docs.waexservices.com" target="_blank" title="CCDB docs">Docs&nbsp; &nbsp; </a><a href="https://drive.google.com/file/d/1ZNnZXvXqdxfYL2PAyAIdFF-plkZGJ4FT/view?usp=sharing" target="_blank" title="CCDB Whitepaper">Whitepape</a><a href="https://drive.google.com/file/d/1ZNnZXvXqdxfYL2PAyAIdFF-plkZGJ4FT/view?usp=sharing" target="_blank" title="CCDB Whitepaper">r&nbsp; &nbsp; &nbsp;</a><a href="https://www.wolframblockchainlabs.com/" target="_blank" title="WBL" rel="" type="" download="">About us</a></p></div>
+            </nav></div>
+    </header><section class="editable-style section-element silex-id-1730317934792-0 page-pricing-2"><div class="editable-style container-element silex-id-1730317934792-1 page-pricing-2 paged-element silex-element-content website-width prevent-draggable paged-element-visible"><div class="editable-style container-element silex-id-1730317934792-2 page-pricing-2 paged-element paged-element-visible"></div></div></section><footer class="container-element editable-style silex-id-1483139189898-1 section-element prevent-resizable">
         
     <div class="editable-style silex-element-content website-width silex-id-1483139189897-0 container-element">
             
